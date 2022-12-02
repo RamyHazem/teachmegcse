@@ -10,12 +10,39 @@ const SubjectList = () => {
     "Physics",
   ]);
 
+  const [searchBarValue, setSearchBarValue] = useState("");
+
+  const filterSubjects = (e) => {
+    setSearchBarValue(e.target.value);
+
+    const subjectsCopy = [...subjects];
+    const resultsArray = subjectsCopy.filter((subject) =>
+      subject.toLowerCase().includes(e.target.value)
+    );
+    setSubjects(resultsArray);
+
+    // const filteredSubjects = subjectsCopy.filter((subject) =>
+    //   subject.includes(value)
+    // );
+    // setSubjects(filteredSubjects);
+    // console.log(filteredSubjects);
+  };
+
   return (
-    <ul className="subject-list">
-      {subjects.map((subject) => (
-        <Subject subject={subject} />
-      ))}
-    </ul>
+    <>
+      <input
+        id="search-bar"
+        type="text"
+        placeholder="Search"
+        onChange={filterSubjects}
+      />
+
+      <ul className="subject-list">
+        {subjects.map((subject, i) => (
+          <Subject subject={subject} key={i + subject} />
+        ))}
+      </ul>
+    </>
   );
 };
 

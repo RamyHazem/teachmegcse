@@ -5,15 +5,19 @@ import AS from "../pages/AS";
 import Home from "../pages/Home";
 import IGCSE from "../pages/IGCSE";
 import "./app.css";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/igcse" element={<IGCSE />} />
-      <Route path="/as" element={<AS />} />
-      <Route path="/a2" element={<A2 />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/igcse" element={<IGCSE />} />
+        <Route path="/as" element={<AS />} />
+        <Route path="/a2" element={<A2 />} />
+      </Routes>
+    </>
   );
 };
 

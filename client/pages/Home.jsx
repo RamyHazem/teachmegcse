@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../src/components/Navbar";
 import Choices from "../src/components/Choices";
-import SearchBar from "../src/components/SearchBar";
 import SubjectList from "../src/components/SubjectList";
 
 const Home = () => {
@@ -14,7 +13,6 @@ const Home = () => {
       <Choices />
       <div className="content">
         <div className="left-column">
-          <SearchBar />
           <SubjectList />
         </div>
       </div>
