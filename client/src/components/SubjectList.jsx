@@ -1,31 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Subject from "./Subject";
+import subjectsData from "../../data/Subjects.json";
 
 const SubjectList = () => {
-  const [subjects, setSubjects] = useState([
-    "Math",
-    "English",
-    "Biology",
-    "Chemistry",
-    "Physics",
-  ]);
+  const [subjects, setSubjects] = useState();
+  const searchBarRef = useRef("");
 
-  const [searchBarValue, setSearchBarValue] = useState("");
+  useEffect(() => {
+    setSubjects(subjectsData.subjects);
+  }, []);
 
   const filterSubjects = (e) => {
-    setSearchBarValue(e.target.value);
+    const query = searchBarRef.current.value;
+    console.log(query);
 
-    const subjectsCopy = [...subjects];
-    const resultsArray = subjectsCopy.filter((subject) =>
-      subject.toLowerCase().includes(e.target.value)
+    if (!query) return setSubjects(subjectsData.subjects);
+
+    const filteredSubjects = subjectsData.subjects.filter((subject) =>
+      subject.toLowerCase().includes(query.toLowerCase())
     );
-    setSubjects(resultsArray);
-
-    // const filteredSubjects = subjectsCopy.filter((subject) =>
-    //   subject.includes(value)
-    // );
-    // setSubjects(filteredSubjects);
-    // console.log(filteredSubjects);
+    setSubjects(filteredSubjects);
   };
 
   return (
@@ -34,11 +28,12 @@ const SubjectList = () => {
         id="search-bar"
         type="text"
         placeholder="Search"
+        ref={searchBarRef}
         onChange={filterSubjects}
       />
 
       <ul className="subject-list">
-        {subjects.map((subject, i) => (
+        {subjects?.map((subject, i) => (
           <Subject subject={subject} key={i + subject} />
         ))}
       </ul>

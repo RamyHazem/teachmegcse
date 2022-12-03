@@ -2,7 +2,9 @@ const express = require("express");
 const app = express();
 
 app.get("/api", (req, res) => {
-  res.json({ users: ["1", "2", "3"] });
+  res.json({
+    subjects: ["Math", "English", "Biology", "Chemistry", "Physics"],
+  });
 });
 
 app.get("/papers", (req, res) => {
