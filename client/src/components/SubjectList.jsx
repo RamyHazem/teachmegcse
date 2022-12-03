@@ -1,23 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
 import Subject from "./Subject";
-import subjectsData from "../../data/Subjects.json";
 
-const SubjectList = () => {
+const SubjectList = ({ subjectsArray }) => {
   const [subjects, setSubjects] = useState();
   const searchBarRef = useRef("");
 
   useEffect(() => {
-    setSubjects(subjectsData.subjects);
-  }, []);
+    setSubjects(subjectsArray);
+  }, [subjectsArray]);
 
   const filterSubjects = (e) => {
     const query = searchBarRef.current.value;
-    console.log(query);
+    if (!query | (query === "")) return setSubjects(subjectsArray);
 
-    if (!query) return setSubjects(subjectsData.subjects);
-
-    const filteredSubjects = subjectsData.subjects.filter((subject) =>
-      subject.toLowerCase().includes(query.toLowerCase())
+    const filteredSubjects = subjectsArray.filter((subject) =>
+      subject.name.toLowerCase().includes(query.toLowerCase())
     );
     setSubjects(filteredSubjects);
   };

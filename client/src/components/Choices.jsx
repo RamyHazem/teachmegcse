@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Choices = () => {
   return (
     <div className="choices-container">
       <div className="igcse">
-        <a href="">
+        <Link to="/igcse">
           <p>Cambridge IGCSEs</p>
-        </a>
+        </Link>
       </div>
       <div className="as-level">
-        <a href="">
+        <Link to="/as">
           <p>Cambridge AS</p>
-        </a>
+        </Link>
       </div>
       <div className="igcse">
-        <a href="">
+        <Link to="/a2">
           <p>Cambridge A2</p>
-        </a>
+        </Link>
       </div>
     </div>
   );

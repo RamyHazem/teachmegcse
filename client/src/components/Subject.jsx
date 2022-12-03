@@ -4,7 +4,9 @@ const Subject = ({ subject }) => {
   return (
     <>
       <li className="dir">
-        <a href="">{subject}</a>
+        <a href="">
+          {subject.name} ({subject.type})
+        </a>
       </li>
     </>
   );

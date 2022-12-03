@@ -1,3 +1,76 @@
 {
-  "subjects": ["Math", "English", "Biology", "Chemistry", "Physics"]
+  "subjects": [
+    {
+      "name": "Math",
+      "type": "IGCSE"
+    },
+    {
+      "name": "English",
+      "type": "IGCSE"
+    },
+    {
+      "name": "French",
+      "type": "IGCSE"
+    },
+    {
+      "name": "Biology",
+      "type": "IGCSE"
+    },
+    {
+      "name": "Chemistry",
+      "type": "IGCSE"
+    },
+    {
+      "name": "Physics",
+      "type": "IGCSE"
+    },
+    {
+      "name": "Math",
+      "type": "AS"
+    },
+    {
+      "name": "English",
+      "type": "AS"
+    },
+    {
+      "name": "French",
+      "type": "AS"
+    },
+    {
+      "name": "Biology",
+      "type": "AS"
+    },
+    {
+      "name": "Chemistry",
+      "type": "AS"
+    },
+    {
+      "name": "Physics",
+      "type": "AS"
+    },
+    {
+      "name": "Math",
+      "type": "A2"
+    },
+    {
+      "name": "English",
+      "type": "A2"
+    },
+    {
+      "name": "French",
+      "type": "A2"
+    },
+    {
+      "name": "Biology",
+      "type": "A2"
+    },
+    {
+      "name": "Chemistry",
+      "type": "A2"
+    },
+    {
+      "name": "Physics",
+      "type": "A2"
+    }
+  ]
 }
