@@ -27,13 +27,13 @@ const Navbar = () => {
         </div>
       </Link>
       <div className="control-buttons">
-        <Link to="/a2">
+        <Link to="/A2">
           <button>A2 Level</button>
         </Link>
-        <Link to="/as">
+        <Link to="/AS">
           <button>AS Level</button>
         </Link>
-        <Link to="/igcse">
+        <Link to="/IGCSE">
           <button>IGCSEs</button>
         </Link>
       </div>

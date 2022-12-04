@@ -5,9 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="content">
-        <div>
-          <SubjectList subjectsArray={subjectsData.subjects} />
-        </div>
+        <SubjectList subjectsArray={subjectsData.subjects} />
       </div>
     </>
   );

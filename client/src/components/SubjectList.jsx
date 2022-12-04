@@ -20,7 +20,7 @@ const SubjectList = ({ subjectsArray }) => {
   };
 
   return (
-    <>
+    <div>
       <input
         id="search-bar"
         type="text"
@@ -34,7 +34,7 @@ const SubjectList = ({ subjectsArray }) => {
           <Subject subject={subject} key={i + subject} />
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
