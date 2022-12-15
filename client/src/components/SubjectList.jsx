@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import Subject from "./Subject";
+import { Link } from "react-router-dom";
 
-const SubjectList = ({ subjectsArray }) => {
+const SubjectList = ({ subjectsArray, year }) => {
   const [subjects, setSubjects] = useState();
   const searchBarRef = useRef("");
 
@@ -30,9 +30,20 @@ const SubjectList = ({ subjectsArray }) => {
       />
 
       <ul className="subject-list">
-        {subjects?.map((subject, i) => (
-          <Subject subject={subject} key={i + subject} />
-        ))}
+        {subjects?.map((subject, i) => {
+          return (
+            <>
+              <li className="dir" key={i + subject}>
+                <Link
+                  to={`/${`${subject.type}/${subject.name}` ?? subject.year}`}
+                  key={i + subject}
+                >
+                  {`${`${subject.name} ${subject.type}` ?? subject.year}`}
+                </Link>
+              </li>
+            </>
+          );
+        })}
       </ul>
     </div>
   );
