@@ -32,16 +32,18 @@ const SubjectList = ({ subjectsArray, year }) => {
       <ul className="subject-list">
         {subjects?.map((subject, i) => {
           return (
-            <>
+            <div key={subject + i}>
               <li className="dir" key={i + subject}>
                 <Link
-                  to={`/${`${subject.type}/${subject.name}` ?? subject.year}`}
+                  to={`/past-papers/${
+                    `${subject.type}/${subject.name}` ?? subject.year
+                  }`}
                   key={i + subject}
                 >
                   {`${`${subject.name} ${subject.type}` ?? subject.year}`}
                 </Link>
               </li>
-            </>
+            </div>
           );
         })}
       </ul>

@@ -9,7 +9,7 @@
       "type": "IGCSE"
     },
     {
-      "name": "French",
+      "name": "Computer Science",
       "type": "IGCSE"
     },
     {
@@ -26,51 +26,27 @@
     },
     {
       "name": "Math",
-      "type": "AS"
+      "type": "A-Level"
     },
     {
       "name": "English",
-      "type": "AS"
+      "type": "A-Level"
     },
     {
       "name": "French",
-      "type": "AS"
+      "type": "A-Level"
     },
     {
       "name": "Biology",
-      "type": "AS"
+      "type": "A-Level"
     },
     {
       "name": "Chemistry",
-      "type": "AS"
+      "type": "A-Level"
     },
     {
       "name": "Physics",
-      "type": "AS"
-    },
-    {
-      "name": "Math",
-      "type": "A2"
-    },
-    {
-      "name": "English",
-      "type": "A2"
-    },
-    {
-      "name": "French",
-      "type": "A2"
-    },
-    {
-      "name": "Biology",
-      "type": "A2"
-    },
-    {
-      "name": "Chemistry",
-      "type": "A2"
-    },
-    {
-      "name": "Physics",
-      "type": "A2"
+      "type": "A-Level"
     }
   ]
 }

@@ -5,18 +5,13 @@ const Choices = () => {
   return (
     <div className="choices-container">
       <div className="igcse">
-        <Link to="/IGCSE">
+        <Link to="/past-papers/IGCSE">
           <p>Cambridge IGCSEs</p>
         </Link>
       </div>
       <div className="as-level">
-        <Link to="/AS">
-          <p>Cambridge AS</p>
-        </Link>
-      </div>
-      <div className="igcse">
-        <Link to="/A2">
-          <p>Cambridge A2</p>
+        <Link to="/past-papers/A-Level">
+          <p>Cambridge A-Level</p>
         </Link>
       </div>
     </div>

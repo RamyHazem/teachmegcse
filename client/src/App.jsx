@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import "./app.css";
-import Home from "../pages/Home";
+import PastPapers from "../pages/Past_Papers/PastPapers";
 import Choices from "./components/Choices";
 import Navbar from "./components/Navbar";
 import IGCSERoutes from "../routes/IGCSERoutes";
-import ASRoutes from "../routes/ASRoutes";
-import A2Routes from "../routes/A2Routes";
+import ALevelRoutes from "../routes/ALevelRoutes";
+import Home from "../pages/Home";
 
 const App = () => {
   return (
@@ -14,12 +14,13 @@ const App = () => {
         <Navbar />
         <div className="title">Home of Past Papers for Cambridge IGCSE</div>
       </div>
-      <Choices />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/IGCSE/*" element={<IGCSERoutes />} />
-        <Route path="/AS/*" element={<ASRoutes />} />
-        <Route path="/A2/*" element={<A2Routes />} />
+        <Route path="/past-papers/*">
+          <Route index element={<PastPapers />} />
+          <Route path="IGCSE/*" element={<IGCSERoutes />} />
+          <Route path="A-Level/*" element={<ALevelRoutes />} />
+        </Route>
       </Routes>
     </>
   );
