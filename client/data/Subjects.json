@@ -1,24 +1,8 @@
 {
   "subjects": [
     {
-      "name": "Accounting",
-      "type": "IGCSE",
-      "code": "0985"
-    },
-    {
-      "name": "Arabic - Foreign Language",
-      "type": "IGCSE",
-      "code": "0544"
-    },
-    {
-      "name": "Biology",
-      "type": "IGCSE",
-      "code": "0970"
-    },
-    {
-      "name": "Business",
-      "type": "IGCSE",
-      "code": "0986"
+      "name": "Math",
+      "type": "IGCSE"
     },
     {
       "name": "Chemistry",
