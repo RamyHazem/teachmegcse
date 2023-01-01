@@ -1,52 +1,149 @@
 {
   "subjects": [
     {
-      "name": "Math",
-      "type": "IGCSE"
+      "name": "Accounting",
+      "type": "IGCSE",
+      "code": "0985"
     },
     {
-      "name": "English",
-      "type": "IGCSE"
+      "name": "Arabic - Foreign Language",
+      "type": "IGCSE",
+      "code": "0544"
+    },
+    {
+      "name": "Biology",
+      "type": "IGCSE",
+      "code": "0970"
+    },
+    {
+      "name": "Business",
+      "type": "IGCSE",
+      "code": "0986"
+    },
+    {
+      "name": "Chemistry",
+      "type": "IGCSE",
+      "code": "0971"
     },
     {
       "name": "Computer Science",
-      "type": "IGCSE"
+      "type": "IGCSE",
+      "code": "0984"
     },
     {
-      "name": "Biology",
-      "type": "IGCSE"
+      "name": "Design & Technology",
+      "type": "IGCSE",
+      "code": "0979"
     },
     {
-      "name": "Chemistry",
-      "type": "IGCSE"
+      "name": "Economics",
+      "type": "IGCSE",
+      "code": "0987"
+    },
+    {
+      "name": "English - First Language",
+      "type": "IGCSE",
+      "code": "0990"
+    },
+    {
+      "name": "English Literature",
+      "type": "IGCSE",
+      "code": "0992"
+    },
+    {
+      "name": "French - Foreign Language",
+      "type": "IGCSE",
+      "code": "7156"
+    },
+    {
+      "name": "Geography",
+      "type": "IGCSE",
+      "code": "0976"
+    },
+    {
+      "name": "History",
+      "type": "IGCSE",
+      "code": "0977"
+    },
+    {
+      "name": "ICT",
+      "type": "IGCSE",
+      "code": "0983"
+    },
+    {
+      "name": "Mathematics",
+      "type": "IGCSE",
+      "code": "0590"
+    },
+    {
+      "name": "Mathematics - Additional",
+      "type": "IGCSE",
+      "code": "0606"
     },
     {
       "name": "Physics",
-      "type": "IGCSE"
+      "type": "IGCSE",
+      "code": "0972"
     },
     {
-      "name": "Math",
-      "type": "A-Level"
+      "name": "Sociology",
+      "type": "IGCSE",
+      "code": "0495"
+    },
+    {
+      "name": "Arabic",
+      "type": "A-Level",
+      "code": "9680"
+    },
+    {
+      "name": "Biology",
+      "type": "A-Level",
+      "code": "9700"
+    },
+    {
+      "name": "Business",
+      "type": "A-Level",
+      "code": "9609"
+    },
+    {
+      "name": "Chemistry",
+      "type": "A-Level",
+      "code": "9701"
+    },
+    {
+      "name": "Computer Science",
+      "type": "A-Level",
+      "code": "9618"
+    },
+    {
+      "name": "Design & Technology",
+      "type": "A-Level",
+      "code": "9705"
+    },
+    {
+      "name": "Economics",
+      "type": "A-Level",
+      "code": "9708"
     },
     {
       "name": "English",
-      "type": "A-Level"
+      "type": "A-Level",
+      "code": "9093"
     },
     {
-      "name": "French",
-      "type": "A-Level"
+      "name": "History",
+      "type": "A-Level",
+      "code": "9489"
     },
     {
-      "name": "Biology",
-      "type": "A-Level"
-    },
-    {
-      "name": "Chemistry",
-      "type": "A-Level"
+      "name": "Math",
+      "type": "A-Level",
+      "code": "9709"
     },
     {
       "name": "Physics",
-      "type": "A-Level"
+      "type": "A-Level",
+      "code": "9702"
     }
   ]
 }

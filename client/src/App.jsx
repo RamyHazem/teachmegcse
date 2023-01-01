@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./app.css";
 import PastPapers from "../pages/Past_Papers/PastPapers";
-import Choices from "./components/Choices";
 import Navbar from "./components/Navbar";
 import IGCSERoutes from "../routes/IGCSERoutes";
 import ALevelRoutes from "../routes/ALevelRoutes";

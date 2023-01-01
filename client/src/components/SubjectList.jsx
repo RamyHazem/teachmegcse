@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const SubjectList = ({ subjectsArray, year }) => {
+const SubjectList = ({ subjectsArray }) => {
   const [subjects, setSubjects] = useState();
   const searchBarRef = useRef("");
 
@@ -35,12 +35,10 @@ const SubjectList = ({ subjectsArray, year }) => {
             <div key={subject + i}>
               <li className="dir" key={i + subject}>
                 <Link
-                  to={`/past-papers/${
-                    `${subject.type}/${subject.name}` ?? subject.year
-                  }`}
+                  to={`/past-papers/${subject.type}/${subject.name}_${subject.code}`}
                   key={i + subject}
                 >
-                  {`${`${subject.name} ${subject.type}` ?? subject.year}`}
+                  {`${subject.name} (${subject.code})`}
                 </Link>
               </li>
             </div>

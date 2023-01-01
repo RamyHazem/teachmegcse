@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SubjectsData from "../../data/Subjects.json";
 import SubjectList from "../../src/components/SubjectList";
-import Choices from "../../src/components/Choices";
 
 const IGCSE = () => {
   const [IGCSESubjects, setIGCSESubjects] = useState([]);

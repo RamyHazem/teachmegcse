@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 
+app.get("/", (req, res) => {
+  res.json("test");
+});
+
 app.get("/api", (req, res) => {
   res.json({
     subjects: ["Math", "English", "Biology", "Chemistry", "Physics"],

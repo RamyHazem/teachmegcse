@@ -47,13 +47,13 @@ const YearList = () => {
         <ul className="subject-list">
           {years?.map((year, i) => {
             return (
-              <>
+              <div key={i + year}>
                 <li className="dir" key={i + year}>
                   <Link to={`${year}`} key={i + year}>
                     {year}
                   </Link>
                 </li>
-              </>
+              </div>
             );
           })}
         </ul>

@@ -1,9 +1,9 @@
-import React, { Children } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import ALevel from "../pages/Past_Papers/ALevel";
 import YearsList from "../src/components/YearsList";
-import Paper from "../pages/Past_Papers/Paper";
 import Choices from "../src/components/Choices";
+import PaperList from "../src/components/PaperList";
 
 const ALevelRoutes = () => {
   return (
@@ -12,7 +12,7 @@ const ALevelRoutes = () => {
       <Routes>
         <Route index element={<ALevel />} />
         <Route path=":subject" element={<YearsList />} />
-        <Route path=":subject/:year" element={<Paper type="ALevel" />} />
+        <Route path=":subject/:year" element={<PaperList />} />
       </Routes>
     </>
   );
